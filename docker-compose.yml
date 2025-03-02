@@ -16,7 +16,7 @@ services:
     image: php:8.2-apache
     container_name: php
     volumes:
-      - ./html:/var/www/html
+      - /root/portainer/p/html:/var/www/html
     ports:
       - "80:80"
     networks:
